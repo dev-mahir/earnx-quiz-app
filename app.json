@@ -5,13 +5,21 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "myapp",
+    "scheme": "earnx",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "description": "Earnx is an innovative app that helps users manage and track their earnings.",
+    "githubUrl": "https://github.com/dev-mahir/earnx",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.devmahir.earnx"
     },
     "android": {
+      "package": "com.devmahir.earnx",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "CAMERA"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -20,7 +28,15 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/favicon.png",
+      "manifest": {
+        "short_name": "Earnx",
+        "description": "Track and manage your earnings with ease.",
+        "start_url": "/",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#ffffff"
+      }
     },
     "plugins": [
       "expo-router",
@@ -36,6 +52,14 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "293e760e-359a-4f44-b3a7-039eb9bdaa8a"
+      }
     }
   }
 }

@@ -7,6 +7,13 @@ import { IconSymbol } from '@/components/ui/IconSymbol';
 import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
+import {
+	AppOpenAd,
+	InterstitialAd,
+	BannerAd,
+	TestIds,
+	AdEventType,
+} from "react-native-google-mobile-ads";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -37,6 +44,13 @@ export default function TabLayout() {
         name="explore"
         options={{
           title: 'Explore',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="login"
+        options={{
+          title: 'Login',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
