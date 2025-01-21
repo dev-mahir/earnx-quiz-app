@@ -19,7 +19,8 @@
       "package": "com.devmahir.earnx",
       "permissions": [
         "ACCESS_FINE_LOCATION",
-        "CAMERA"
+        "CAMERA","READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
       ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
