@@ -15,6 +15,7 @@
       "bundleIdentifier": "com.devmahir.earnx"
     },
     "android": {
+"minSdkVersion": 21,
       "package": "com.devmahir.earnx",
       "permissions": [
         "ACCESS_FINE_LOCATION",
